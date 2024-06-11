@@ -2,7 +2,7 @@
 A Trivia game the uses opentdb API
 # Quiz Titan Game By Oluwayemisi Ogunsola
 
-# Technogies
+# Technologies
 
 - HTML
 - CSS
