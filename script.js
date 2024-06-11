@@ -18,12 +18,14 @@ nextButton.addEventListener('click', () => {
 playAgainButton.addEventListener('click', playAgain);
 
 
+// Function to start the game
 function startGame() {
     startButton.classList.add('hidden');
     questionContainerElement.classList.remove('hidden');
     fetchQuestions();
 }
 
+// Asynchronous function to fetch questions from the Open Trivia Database API
 async function fetchQuestions() {
     // Set difficulty to "easy"
     const res = await fetch('https://opentdb.com/api.php?amount=10&type=multiple&difficulty=easy');
@@ -63,6 +65,7 @@ function resetState() {
     }
 }
 
+// Function to handle answer selection
 function selectAnswer(button, correctAnswer) {
     const selectedAnswer = button.innerText;
     const feedback = document.createElement('div');
